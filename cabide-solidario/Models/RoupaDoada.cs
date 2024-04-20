@@ -11,6 +11,7 @@ namespace cabide_solidario.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Informe o nome do item.")]
+        [Display(Name = "Nome do item")]
         public string NomeItem { get; set; }
 
         [Required(ErrorMessage = "Informe o nome do doador.")]
