@@ -21,7 +21,7 @@ namespace cabide_solidario.Models
         public string Tipo { get; set; }
 
         [Required(ErrorMessage = "Informe o tamanho do item.")]
-        public char Tamanho { get; set; }
+        public string Tamanho { get; set; }
 
         [Required(ErrorMessage = "Informe a cor do item.")]
         public string Cor { get; set; }
@@ -29,4 +29,22 @@ namespace cabide_solidario.Models
         [Required(ErrorMessage = "Informe o genero do item.")]
         public string Genero { get; set;}
     }
+
+    /*Estevão: coloquei algumas opções pré selecionadas mas ainda não "subi". Vamos discutir se iremos deixar os campos livres para texto (como estão agora) ou
+    se iremos fechar somente para as opções abaixo.*/
+
+    public enum Genero
+    {
+        Feminino,
+        Masculino
+    }
+
+    public enum Tamanho
+    {
+        P,
+        M,
+        G
+    }
+
+
 }
